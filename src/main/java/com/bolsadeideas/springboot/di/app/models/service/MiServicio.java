@@ -16,6 +16,6 @@ public class MiServicio implements IServicio{
 	//Si no se usa manda error
 	
 	public String operacion() {
-		return "Ejecutando algun proceso importante con desacoplamiento";
+		return "Ejecutando algun proceso importante simple con desacoplamiento";
 	}
 }
