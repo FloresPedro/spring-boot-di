@@ -9,8 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.RequestScope;
 
 @Component
+@RequestScope //Al ser un objeto de sesion se va concatenando al igual que se va destruyendo por cada get que se manda
 public class Factura {
 
 	@Value("${descripcion.factura}")
