@@ -1,6 +1,7 @@
 package com.bolsadeideas.springboot.di.app.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +16,7 @@ public class IndexController {
 	//ahora se esta inyectando la instancia pero se puede desacoplar mas usando una interfaz
 	//private MiServicio servicio;
 	@Autowired
+	@Qualifier("miServicioSimple")
 	private IServicio servicio;
 	
 	//inyectando a travez del contructor. el mismo principio

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
  */
 //@Service
 @Controller("miServicioComplejo")
-@Primary //utilizar la palabra primary para seleccionar que clase usar para realizar la inyeccion de dependencias cuando se tienen
+//@Primary //utilizar la palabra primary para seleccionar que clase usar para realizar la inyeccion de dependencias cuando se tienen
 //dos clases que implementan la misma interfaz ya que spring no sabe cual de las dos inyectar
 public class MiServicioComplejo implements IServicio{
 	
